@@ -1,0 +1,113 @@
+$primary: #2b81e4
+$secondary: #eee
+$light: #fff
+$grey: #555
+$light-grey: #777
+
+*
+  margin: 0
+  padding: 0
+  font-family: "Vollkorn", serif
+  list-style-type: none
+  text-decoration: none
+  box-sizing: border-box
+  outline: none
+
+html
+  font-size: 62.5%
+
+.container
+  background-color: $secondary
+  margin: 3.5rem
+  box-shadow: 0 1rem 3rem $grey
+  overflow: hidden
+
+// ======================== header
+.header
+  width: 100%
+  height: calc(100vh - 7rem)
+  background: linear-gradient(rgba(18, 113, 255, 0.5), rgba(18, 113, 255, 0.3)), url("./assets/header-bg.jpg") 50% 50% /cover no-repeat
+  display: flex
+  align-items: center
+  justify-content: center
+  position: relative
+  perspective: 100rem
+  -webkit-perspective: 100rem
+.header__text
+  text-align: center
+  text-transform: uppercase
+  letter-spacing: .1rem
+  text-shadow: 0 .3rem .5rem $grey
+.header__title
+  font-size: 8rem
+  color: $light
+.header__par
+  font-size: 3rem
+  font-weight: 500
+  color: $secondary
+  max-width: 70rem
+  margin: auto
+.header__balloon
+  width: 35%
+  animation: image-float 180s infinite
+@keyframes image-float
+  0%
+    transform: translateZ(40rem) translateX(0)
+    opacity: 1
+  40%
+    transform: translateZ(-500rem) translateX(150rem)
+    opacity: .8
+  70%
+    transform: translateZ(-1500rem) translateX(800rem)
+    opacity: .6
+  80%
+    transform: translateZ(-50rem) translateX(100rem)
+    opacity: .8
+  100%
+    transform: translateZ(40rem) translateX(0)
+.header__logo
+  position: absolute
+  top: 4rem
+  right: 4rem
+.header__logo-letters
+  display: flex
+.header__logo-letter
+  font-size: 2rem
+  font-weight: 900
+  color: $primary
+  text-transform: uppercase
+  background-color: $light
+  width: 3.5rem
+  height: 3.5rem
+  margin: .5rem
+  border-radius: 50%
+  display: flex
+  align-items: center
+  justify-content: center
+  &:nth-child(1)
+    animation: drop-letter 5s .1s infinite
+  &:nth-child(2)
+    animation: drop-letter 5s .2s infinite
+  &:nth-child(3)
+    animation: drop-letter 5s .3s infinite
+  &:nth-child(4)
+    animation: drop-letter 5s .4s infinite
+  &:nth-child(5)
+    animation: drop-letter 5s .5s infinite
+  &:nth-child(6)
+    animation: drop-letter 5s .6s infinite
+  &:nth-child(7)
+    animation: drop-letter 5s .7s infinite
+@keyframes drop-letter
+  0%
+    transform: translateY(0)
+  10%
+    transform: rotateY(0)
+  15%
+    transform: translateY(-50%)
+  20%
+    transform: translateY(0)
+  100%
+    transform: translateY(0)
+
+// ===================== end of header
