@@ -13,6 +13,30 @@
 </head>
 <body>
 <div class="container">
+<!--navbar-->
+  <div class="navbar__open-icon navbar__icon">
+    <div class="navbar__icon-line"></div>
+    <div class="navbar__icon-line"></div>
+    <div class="navbar__icon-line"></div>
+  </div>
+  <div class="navbar">
+    <nav class="navbar__nav">
+      <div class="navbar__close-icon navbar__icon">
+        <div class="navbar__icon-line navbar__icon-line--1"></div>
+        <div class="navbar__icon-line navbar__icon-line--2"></div>
+      </div>
+      <div class="navbar__list">
+        <a href="#" class="navbar__link">Home</a>
+        <a href="#" class="navbar__link">Tours</a>
+        <a href="#" class="navbar__link">About Us</a>
+        <a href="#" class="navbar__link">Offer</a>
+        <a href="#" class="navbar__link">Contact</a>
+      </div>
+    </nav>
+  </div>
+<!--end of navbar-->
+
+<!--  header-->
   <header class="header">
     <div class="header__text">
       <h1 class="header__title">Around the World</h1>
@@ -31,6 +55,148 @@
       </h2>
     </div>
   </header>
+<!--  end of header-->
+<!-- popular-->
+  <section class="popular">
+    <h2 class="popular__title">The Most Popular Tours</h2>
+    <div class="popular__cards">
+
+      <div class="popular__card">
+        <div class="popular__card-front">
+          <img class="popular__card-front-img" src="./assets/forest.jpg" alt="Forest">
+          <h3 class="popular__card-name">The Wild Forest</h3>
+          <ul class="popular__card-list">
+            <li class="popular__card-list-item">7 days tour</li>
+            <li class="popular__card-list-item">Up to 20 people</li>
+            <li class="popular__card-list-item">4 tour guides</li>
+            <li class="popular__card-list-item">Sleep in private tents</li>
+            <li class="popular__card-list-item">Difficulty: medium</li>
+          </ul>
+          <button class="popular__card-btn">Price&gt;&gt;</button>
+        </div>
+        <div class="popular__card-back">
+          <button class="popular__card-btn">&lt;&lt;back</button>
+          <h3 class="popular__card-back-price">$399</h3>
+          <button class="popular__card-back-btn-book">Booking</button>
+        </div>
+      </div>
+
+      <div class="popular__card">
+        <div class="popular__card-front">
+          <img class="popular__card-front-img" src="./assets/river.jpg" alt="River">
+          <h3 class="popular__card-name">Along The River</h3>
+          <ul class="popular__card-list">
+            <li class="popular__card-list-item">9 days tour</li>
+            <li class="popular__card-list-item">Up to 30 people</li>
+            <li class="popular__card-list-item">7 tour guides</li>
+            <li class="popular__card-list-item">Sleep in private tents</li>
+            <li class="popular__card-list-item">Difficulty: hard</li>
+          </ul>
+          <button class="popular__card-btn">Price&gt;&gt;</button>
+        </div>
+        <div class="popular__card-back">
+          <button class="popular__card-btn">&lt;&lt;back</button>
+          <h3 class="popular__card-back-price">$499</h3>
+          <button class="popular__card-back-btn-book">Booking</button>
+        </div>
+      </div>
+
+      <div class="popular__card">
+        <div class="popular__card-front">
+          <img class="popular__card-front-img" src="./assets/sea.jpg" alt="Sea">
+          <h3 class="popular__card-name">The island beach</h3>
+          <ul class="popular__card-list">
+            <li class="popular__card-list-item">5 days tour</li>
+            <li class="popular__card-list-item">Up to 40 people</li>
+            <li class="popular__card-list-item">8 tour guides</li>
+            <li class="popular__card-list-item">Sleep in hotel</li>
+            <li class="popular__card-list-item">Difficulty: easy</li>
+          </ul>
+          <button class="popular__card-btn">Price&gt;&gt;</button>
+        </div>
+        <div class="popular__card-back">
+          <button class="popular__card-btn">&lt;&lt;back</button>
+          <h3 class="popular__card-back-price">$599</h3>
+          <button class="popular__card-back-btn-book">Booking</button>
+        </div>
+      </div>
+
+    </div>
+  </section>
+<!--  end of popular-->
+<!--  stories-->
+  <section class="stories">
+    <div class="stories__video-bg-wrap">
+      <video class="stories__video" autoplay muted loop>
+        <source src="assets/video.mp4" type="video/mp4"/>
+      </video>
+    </div>
+    <div class="stories__wrapper">
+      <div class="stories__story-bg">
+        <div class="stories__story">
+          <img class="stories__story-img" src="./assets/story-img-1.jpg" alt="customer image">
+          <div class="stories__story-text">
+            <h4 class="stories__story-title">These were the best days of this year</h4>
+            <p class="stories__story-par">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad eum, iste. Ab aliquid beatae ex illum ipsam, iure numquam odit, provident quae quia quis quod repellat? Expedita facilis reiciendis repudiandae!
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="stories__story-bg">
+        <div class="stories__story">
+          <img class="stories__story-img" src="./assets/story-img-2.jpg" alt="customer image">
+          <div class="stories__story-text">
+            <h4 class="stories__story-title">I enjoyed this great tour</h4>
+            <p class="stories__story-par">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad eum, iste. Ab aliquid beatae ex illum ipsam, iure numquam odit, provident quae quia quis quod repellat? Expedita facilis reiciendis repudiandae!
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+<!--  end of stories-->
+<!--  contact-->
+  <section class="contact">
+    <h3 class="contact__title">Contact Us</h3>
+    <form class="contact__form">
+      <div class="contact__input-group">
+        <label for="input-name" class="contact__label">Full Name *</label>
+        <input type="text" class="contact__input" id="input-name" placeholder="Enter your name">
+      </div>
+      <div class="contact__input-groups">
+        <div class="contact__input-group">
+          <label for="input-email" class="contact__label">Email *</label>
+          <input type="email" class="contact__input" id="input-email" placeholder="Enter your Email">
+        </div>
+        <div class="contact__input-group">
+          <label for="input-phone" class="contact__label">Phone *</label>
+          <input type="number" class="contact__input" id="input-phone" placeholder="Enter your Phone Number">
+        </div>
+      </div>
+      <div class="contact__input-group">
+        <label for="input-textarea" class="contact__label">Message *</label>
+        <textarea class="contact__textarea" id="input-textarea" placeholder="Your message here"></textarea>
+      </div>
+      <button class="contact__submit-btn" type="button">Submit</button>
+    </form>
+  </section>
+<!--  end of contact-->
+<!--  footer-->
+  <footer class="footer">
+    <div class="footer__list">
+      <a href="#" class="footer__link">Home</a>
+      <a href="#" class="footer__link">Tours</a>
+      <a href="#" class="footer__link">About Us</a>
+      <a href="#" class="footer__link">Offer</a>
+      <a href="#" class="footer__link">Contact</a>
+    </div>
+    <p class="footer__copy">
+      Copyright &copy; Stepkoff All Rights Reserved
+    </p>
+  </footer>
+<!--  end of footer-->
 </div>
 <script type="module" src="/main.js"></script>
 </body>
