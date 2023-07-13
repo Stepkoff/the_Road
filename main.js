@@ -2,12 +2,12 @@ const container = document.querySelector(".container");
 
 document.querySelector(".navbar__open-icon").addEventListener("click", () => {
   container.classList.add("active");
-  document.body.style.overflow = 'hidden'
+  // document.body.style.overflow = 'hidden'
 });
 
 document.querySelector(".navbar__close-icon").addEventListener("click", () => {
   container.classList.remove("active");
-  document.body.style.overflow = ''
+  // document.body.style.overflow = ''
 });
 
 const colors = ["#6495ed", "#7fffd4", "#ffa07a", "#f08080", "#afeeee"];
