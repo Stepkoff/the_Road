@@ -5,6 +5,7 @@ $light: #fff
 $grey: #555
 $light-grey: #777
 
+
 *
   margin: 0
   padding: 0
@@ -21,6 +22,8 @@ html
   margin: 3.5rem
   box-shadow: 0 1rem 3rem $grey
   overflow: hidden
+  @media (max-width: 650px)
+    margin: 0
 // end of common styles
 
 // ======================== navbar
@@ -36,11 +39,15 @@ html
   justify-content: center
   flex-direction: column
 
+
 .navbar__open-icon
   position: fixed
   top: 6.5rem
   left: 6.5rem
   z-index: 200
+  @media (max-width: 650px)
+    top: 2.5rem
+    left: 2.5rem
 
 .navbar__icon-line
   height: 0.2rem
@@ -61,7 +68,8 @@ html
   z-index: 300
   padding: 3.5rem 5.5rem 3.5rem 3.5rem
   transition: bottom 0.5s, opacity 0.2s
-
+  @media (max-width: 650px)
+    padding: 0
 .navbar__nav
   width: 100%
   height: 100%
@@ -77,10 +85,14 @@ html
   z-index: 300
   .navbar__icon-line
     position: absolute
+  @media (max-width: 650px)
+    right: 4rem
 
 .navbar__list
   height: 100%
   display: flex
+  @media (max-width: 1000px)
+    flex-direction: column
 
 .navbar__icon-line--1
   transform: rotate(40deg)
@@ -104,6 +116,8 @@ html
   &:hover
     opacity: 1
     color: $primary
+  @media (max-width: 1000px)
+    flex-grow: 1
 
 .active
   .navbar
@@ -135,20 +149,34 @@ html
   position: relative
   perspective: 100rem
   -webkit-perspective: 100rem
+  @media (max-width: 650px)
+    height: 100vh
 .header__text
   text-align: center
   text-transform: uppercase
   letter-spacing: .1rem
   text-shadow: 0 .3rem .5rem $grey
+  @media (max-width: 1000px)
+    position: absolute
+    top: 50%
+    left: 50%
+    transform: translate(-50%, -50%)
+    z-index: 10
 .header__title
   font-size: 8rem
   color: $light
+  @media (max-width: 1000px)
+    font-size: 6rem
 .header__par
   font-size: 3rem
   font-weight: 500
   color: $secondary
   max-width: 70rem
   margin: auto
+  @media (max-width: 1000px)
+    font-size: 2.5rem
+  @media (max-width: 800px)
+    display: none
 .header__balloon
   width: 35%
   animation: image-float 180s infinite
@@ -222,14 +250,23 @@ html
   margin: 0 0 8rem
   color: $primary
   text-shadow: .1rem .2rem $primary
+  @media (max-width: 1000px)
+    font-size: 6rem
+  @media (max-width: 800px)
+    font-size: 5rem
 .popular__cards
   display: flex
   justify-content: space-evenly
+  @media (max-width: 1200px)
+    flex-direction: column
+    align-items: center
 .popular__card
   width: 35rem
   position: relative
   perspective: 150rem
   -webkit-perspective: 150rem
+  @media (max-width: 1200px)
+    margin: 3rem 0
 .popular__card-front
   text-align: center
   background-color: $light
@@ -336,15 +373,26 @@ html
   width: 70%
   box-shadow: 0 2rem 5rem rgba(51, 51, 51, .4)
   transform: skewX(20deg)
+  @media (max-width: 1200px)
+    width: 85%
+  @media (max-width: 1000px)
+    transform: skewX(0)
+
 .stories__story
   transform: skewX(-20deg)
   display: flex
+  @media (max-width: 1000px)
+    transform: skewX(0)
+    flex-direction: column
+    align-items: center
 .stories__story-img
   width: 20rem
   height: 20rem
   object-fit: cover
   border-radius: 50%
   margin: 0 5rem 0 0
+  @media (max-width: 1000px)
+    margin: 0 0 3rem
 .stories__story-text
   letter-spacing: .1rem
 .stories__story-title
@@ -384,6 +432,8 @@ html
   color: $light
   text-shadow: 0 1rem 2rem #000
   margin-bottom: 8rem
+  @media (max-width: 650px)
+    font-size: 6rem
 .contact__form
   width: 70rem
   height: 50rem
@@ -396,6 +446,11 @@ html
   border-radius: 0.5rem
   box-shadow: 0 1rem 3rem #000
   padding: 5rem
+  @media (max-width: 800px)
+    width: 90%
+  @media (max-width: 650px)
+    padding: 2rem
+    height: 40rem
 .contact__input-group
   width: 100%
   display: flex
@@ -440,7 +495,7 @@ html
   letter-spacing: 0.1rem
   margin-top: 1rem
   background-color: $light-grey
-  color: var(--white-color)
+  color: $light
   border-radius: 0.5rem
   border: none
   cursor: pointer
@@ -469,6 +524,9 @@ html
 .footer__list
   display: flex
   justify-content: center
+  @media (max-width: 800px)
+    flex-direction: column
+    align-items: center
 .footer__link
   font-size: 2rem
   color: $light
@@ -480,6 +538,11 @@ html
   &:hover
     transform: rotate(-10deg)
     box-shadow: 0 2rem 3rem #000
+  @media (max-width: 1000px)
+    padding: .3rem 2rem
+    margin: 0 1rem
+  @media (max-width: 800px)
+    margin: 1rem 0
 .footer__copy
   text-align: center
   font-size: 1.5rem
